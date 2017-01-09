@@ -1,6 +1,5 @@
 #!/bin/bash
 
-docker start lemonbar
 bspc monitor -g 1920x1040+0+40
 bspc config border_width 5
 bspc config window_gap 10
