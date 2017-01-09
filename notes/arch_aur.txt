@@ -1,0 +1,11 @@
+It increasingly seems that getting stuff from AUR will be fiendish.
+
+1. Saltstack has no AUR state
+  -- (can I write this?)
+  -- Accepted solution is to instead run a custom repo and stick it in the source list
+2. This custom repo runs on arch, and BlueRidge is vaguely debian-ish
+  -- (hack it so it runs on debian?)
+  -- Could run arch in a docker container
+3. (Assuming problems will arise from dockerizing this thing, then maintaining the docker stack on BR)
+
+I'm on Gentoo now, but in the event that arch again comes up, the plan was to do the docker container thing.

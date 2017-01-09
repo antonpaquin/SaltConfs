@@ -1,0 +1,18 @@
+The proper format for changing package names based on OS is:
+
+{% set packagename = {
+  'Arch': 'archpackage',
+  'Gentoo': 'gentoo/package',
+}.get(grains.os_family) %}
+
+like so.
+
+Lots of debian/raspbian things (raspis) will be broken as I don't have debian
+names in yet.
+
+Also lots of arch things might be broken because they're actually using debian
+names. Not quite sure, but it's easy enough to fix when it comes up.
+
+To check the os_family value:
+
+salt 'myTarget' grains.get os_family

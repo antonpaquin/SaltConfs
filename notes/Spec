@@ -1,0 +1,157 @@
+Nimitz
+  x user
+    x anton
+    x root
+  x mount
+    x sshfs: ~/Fleet/(argo|vega|blueridge)
+  install
+    x xorg-server
+    x xorg-xinit
+    x xorg-xinput
+    x xorg-xhost
+    x xf86-input-libinput
+    x xf86-video-intel
+    x x11-utils
+
+    x lightdm
+    x lightdm-gtk-greeter
+
+    x bspwm
+    x feh
+    x sxhkd
+
+    lemonbar
+    x acpi
+
+    x git
+    x openssh
+    x python3 (are these the proper package names?)
+    x python3-pip
+    x ruby (packages?)
+
+    x rxvt-unicode
+    x unzip
+    x alsa-utils
+    x dialog
+    X netctl
+
+    x atom
+    chromium
+    x dolphin-emu
+    x hexchat
+    x kicad
+    x libreoffice
+    x mpv
+    x mupdf
+    x pinta
+    x qemu
+    steam (requires special)
+  remove
+  service
+  x mkdir
+    /home/anton
+      /Documents
+        /etc
+        /Projects
+        /School
+        /Work
+      /Downloads
+      /Fleet
+      /Games
+      /Misc
+      /Pictures
+      /Programming
+      /Scripts
+        /.rice
+  x files
+    ~/Downloads/sendToVega.sh
+    ~/Scripts
+      /trackballscroll
+      /moviemode
+      /unmoviemode
+
+  symlinks
+
+  TODO get away from the various .OS scripts
+  Also, set up an auto backup system to vega
+
+Argo
+  Reflash that shit
+
+Vega
+  user:
+    pi
+
+  mount:
+    drive
+    2drive
+
+  install:
+    apache2
+    build-essential
+    deluge
+    deluge-web
+    deluged
+    flac
+    git
+    openssh
+    plexmediaserver
+    python3
+    python3-pip
+    ruby
+    rails
+    ruby-passenger
+
+  remove:
+    adwaita-icon-theme
+    alacarte
+    bluej
+    claws-mail
+    dillo
+    epiphany-browser
+    galculator
+    gpicview
+    greenfoot
+    <there is more. Goddamn raspbian>
+
+  service:
+    apache2
+    plexmediaserver
+
+  mkdir:
+    /home/pi/drive
+      /ftp
+          /music
+      /Media
+        /Anime
+        /Music
+        /Anime - Movies
+      /server
+        /Vegarails
+      /torrents
+        /Anime-bot
+          /complete
+          /incomplete
+          /watch
+        /What
+    /home/pi/2drive
+
+  files:
+    /etc/apache2/apache2.conf
+    /home/pi/drive/torrents/What/plexmove.sh
+    /home/pi/drive/torrents/Anime-bot/sort.conf
+    /home/pi/drive/torrents/Anime-bot/sort.sh
+    /home/pi/drive/ftp/music/unzipToPlex.sh
+    /home/pi/.ssh/authorized_keys
+
+  symlinks:
+    /var/www/html/Vegarails
+    /var/www/html/ftp
+
+
+
+--Blueridge
+Sync the Blueridge copy of these to 3
+
+
+What is a drop of rain, compared to the storm? What is a thought, compared to a mind? Our unity is full of wonder, which your tiny individualism cannot even conceive.

@@ -1,0 +1,38 @@
+#Go to desktop 1-9
+super + {1-9,0}
+  bspc desktop -f '^{1-9,10}'
+
+#Send to desktop 1-9
+super + shift + {1-9,0}
+  bspc node -d '^{1-9,10}'
+
+#Go to desktop -1/+1
+super + shift + {Left,Right}
+  bspc desktop -f {prev,next}
+
+#urxvt
+super + Return
+  urxvt &
+
+super + {m,u}
+  # {less,more} gaps
+
+#Jump around windows
+super + {h,j,k,l}
+  bspc node -f {west,south,north,east}
+
+#Move windows around
+super + {Left,Down,Up,Right}
+  bspc node -s {west,south,north,east}
+
+#Focus on click
+~button1
+  bspc node pointed -f
+
+#Close/Kill windows
+super + {w, q}
+  bspc node -{c,k}
+
+#Rofi launcher
+super + space
+  rofi -show run

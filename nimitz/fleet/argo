@@ -1,0 +1,5 @@
+Host argo
+  HostName argo.tuko.com 
+  User pirate
+  Port 22
+  IdentityFile ~/.ssh/nimitz.key 

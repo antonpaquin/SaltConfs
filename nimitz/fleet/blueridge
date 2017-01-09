@@ -1,0 +1,5 @@
+Host blueridge
+  HostName blueridge.antonpaquin.me
+  User pi
+  Port 2022
+  IdentityFile ~/.ssh/nimitz.key

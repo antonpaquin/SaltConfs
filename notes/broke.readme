@@ -1,0 +1,28 @@
+Something fucked up. What's going on here and how do I fix it?
+
+Saltstack is here to manage the infrastructure on my machines and keep config /
+structure in code, rather than only preserved in the implementation. All of the
+code should be available here.
+
+Hopefully, at this point, saltstack is managing most of my configs.
+
+There's some decent tutorials by googling "saltstack quickstart", or else
+looking at the salt.state.whatever documentation.
+
+If salt is messing with something critical, it might be prudent to get to
+blueridge and remove the relevant "salt 'Target' state.apply target" from
+crontab / script / wherever I have it set up. This isn't ideal, but should stop
+reverting changes. Of course, the proper solution is to fix it here.
+
+All of the managed files for each of my machines should be defined in their own
+top-level dir with an init.sls leading everything. These might reference other
+sls modules / files elsewhere in the config. At the moment, everything is pretty
+well commented and organized (though not yet in git).
+
+At the moment, everything is running decently, though argo was borked up trying
+to install the latest salt. As of last update, salt version was 2016.3.3
+(2016.3.0 on Nimitz).
+
+Godspeed and good luck
+Anton
+07 Nov 2016
