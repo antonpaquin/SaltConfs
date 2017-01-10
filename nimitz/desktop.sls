@@ -12,6 +12,9 @@ include:
   # Usability
   - ui.sxhkd
   - ui.lemonbar
-  - ui.feh
   - ui.urxvt
   - ui.rofi
+
+  # Pretty
+  - ui.feh
+  - ui.theme.arc

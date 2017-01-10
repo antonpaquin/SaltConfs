@@ -12,6 +12,10 @@
   'Gentoo': 'x11-misc/lightdm-gtk-greeter',
 }.get(grains.os_family) %}
 
+# Include the gtk theme I want
+include:
+  - ui.theme.arc
+
 lightdm:
   pkg.installed:
     - name: {{ lightdm }}
@@ -41,4 +45,3 @@ lightdm-greeter-conf:
     - mode: 644
     - require:
       - pkg: lightdm-gtk-greeter
-      
