@@ -21,7 +21,7 @@
   '300_makeopts',
   '400_cpu_flags',
   '500_vcards',
-  '600_input'
+  '600_input',
   '999_use'
   ] %}
 /etc/portage/make.conf/{{ cfile }}.conf:
