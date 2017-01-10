@@ -9,14 +9,14 @@ deluge:
   pkg.installed:
     - name: {{ deluge }}
 
-deluged:
-  service.running:
-    - enable: True
-    - watch:
-      - pkg: deluge
-    - onfail:
-      - cmd: deluge_restart
-
-deluge_restart:
-  cmd.run:
-    - name: systemctl restart deluged
+# deluged:
+#   service.running:
+#     - enable: True
+#     - watch:
+#       - pkg: deluge
+#     - onfail:
+#       - cmd: deluge_restart
+# 
+# deluge_restart:
+#   cmd.run:
+#     - name: systemctl restart deluged

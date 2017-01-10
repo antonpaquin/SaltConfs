@@ -9,7 +9,7 @@ include:
   - nimitz.storage
 
   # Connect to the fleet
-  - nimitz.fleet
+  # - nimitz.fleet
 
   # General programs
   - nimitz.programs
