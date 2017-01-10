@@ -13,7 +13,17 @@
     - makedirs: True
 
 #TODO copy the rest of this from Nimitz
-{% for cfile in ['500_vcards','600_input'] %}
+{% for cfile in [
+  '001_pkgdirs',
+  '002_chost',
+  '100_mirrors',
+  '200_CFLAGS',
+  '300_makeopts',
+  '400_cpu_flags',
+  '500_vcards',
+  '600_input'
+  '999_use'
+  ] %}
 /etc/portage/make.conf/{{ cfile }}.conf:
   file.managed:
     - source: salt://os/gentoo/make/{{ cfile }}.conf
