@@ -2,6 +2,7 @@
 
 urxvt &
 sxhkd &
+feh --bg-scale /home/anton/.config/backgrounds/mountains_blue.jpg &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10 &
 bspc monitor -g 1920x1040+0+40 &
