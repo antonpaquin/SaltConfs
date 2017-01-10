@@ -1,4 +1,0 @@
-sudo tar -cvf SaltConfs.tar -C /home/anton/Programming SaltConfs
-scp SaltConfs.tar pirate@argo:/home/pirate/SaltConfs.tar
-sudo rm SaltConfs.tar
-ssh pirate@argo /home/pirate/push.sh
