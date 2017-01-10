@@ -16,6 +16,7 @@ include:
 
   # Accessibility
   - nimitz.desktop
+  - nimitz.scripts
 
   # Add users
   - user.anton
