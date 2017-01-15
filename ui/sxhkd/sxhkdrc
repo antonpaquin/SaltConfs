@@ -36,3 +36,13 @@ super + {w, q}
 #Rofi launcher
 super + space
   rofi -show run
+
+#Volume
+XF86AudioLowerVolume
+  VolumeDown
+
+XF86AudioRaiseVolume
+  VolumeUp
+
+XF86AudioMute
+  amixer set Master toggle

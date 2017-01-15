@@ -1,0 +1,1 @@
+amixer -M sget 'Master' | grep -o -m 1 -P '[0-9]*(?=%)' | xargs expr 4 + | awk '{print $1"%"}' | xargs amixer -M set Master > /dev/null

@@ -7,7 +7,15 @@
     - require:
       - test: built_home
 
-{% for script in ['trackballscroll', 'moviemode', 'unmoviemode', 'SaltPush', 'ssh-regen'] %}
+{% for script in [
+  'trackballscroll',
+  'moviemode',
+  'unmoviemode',
+  'SaltPush',
+  'ssh-regen',
+  'VolumeUp',
+  'VolumeDown'
+  ] %}
 {{ pillar.get('data_dir') + '/Scripts/' + script }}:
   file.managed:
     - source: salt://nimitz/scripts/{{script}}
