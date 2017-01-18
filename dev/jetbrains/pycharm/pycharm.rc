@@ -1,0 +1,1 @@
+alias pycharm='PYCHARM_JDK=/usr/lib64/jvm/oracle-jdk-bin-1.8 pycharm-community'
