@@ -14,6 +14,7 @@ include:
   - prog.hexchat
 
   # Dev
+  - dev.docker
   - dev.git
   - dev.nmap
   - dev.python
