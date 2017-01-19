@@ -10,6 +10,10 @@
   'Gentoo': 'app-arch/p7zip',
 }.get(grains.os_family) %}
 
+{% set unrar = {
+  'Gentoo': 'app-arch/unrar'
+}.get(grains.os_family) %}
+
 unzip:
   pkg.installed:
     - name: {{ unzip }}
@@ -17,3 +21,7 @@ unzip:
 p7zip:
   pkg.installed:
     - name: {{ p7zip }}
+
+unrar:
+  pkg.installed:
+    - name: {{ unrar }}
