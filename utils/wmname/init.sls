@@ -12,7 +12,7 @@ wmname:
   pkg.installed:
     - name: {{ wmname }}
 
-{{ pillar.get('data_dir') /.bashrc.d/wmname.rc:
+{{ pillar.get('data_dir') }}/.bashrc.d/wmname.rc:
   file.managed:
     - source: salt://utils/wmname/wmname.rc
     - user: {{ pillar.get('primary_user') }}

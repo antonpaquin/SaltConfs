@@ -9,19 +9,19 @@ include:
   - utils.bash
   - dev.oraclejava
 
-{% set pycharm = {
-  'Gentoo': 'dev-util/pycharm-community'
+{% set clion = {
+  'Gentoo': 'dev-util/clion'
 }.get(grains.os_family) %}
 
-pycharm:
+clion:
   pkg.installed:
-    - name: {{ pycharm }}
+    - name: {{ clion }}
     - require:
       - pkg: oraclejava
 
-{{ pillar.get('data_dir') }}/.bashrc.d/pycharm.rc:
+{{ pillar.get('data_dir') }}/.bashrc.d/clion.rc:
   file.managed:
-    - source: salt://dev/jetbrains/pycharm/pycharm.rc
+    - source: salt://dev/jetbrains/clion/clion.rc
     - user: {{ pillar.get('primary_user') }}
     - group: {{ pillar.get('primary_user') }}
     - mode: 777

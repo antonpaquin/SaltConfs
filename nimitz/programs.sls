@@ -21,6 +21,9 @@ include:
   - dev.qemu
   - prog.kicad
 
+  - dev.jetbrains.pycharm
+  - dev.jetbrains.clion
+
   # Games
   - prog.dolphin_emu
 
