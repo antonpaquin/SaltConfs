@@ -1,5 +1,5 @@
 Host argo
-  HostName argo.tuko.com 
+  HostName argo.antonpaquin.me
   User pirate
-  Port 22
-  IdentityFile ~/.ssh/nimitz.key 
+  Port 1022
+  IdentityFile ~/.ssh/nimitz.key
