@@ -13,7 +13,7 @@ Vega
     kodi (?)
 
 Blueridge
-  TODO:
-    Acts as proxy for the fleet
-    Automatically applies salt states to everything periodically
-    MOTD "What is a drop of rain, compared to the storm? What is a thought, compared to a mind? Our unity is full of wonder, which your tiny individualism cannot even conceive."
+  x apache
+  x git
+  x crontab
+  x motd
