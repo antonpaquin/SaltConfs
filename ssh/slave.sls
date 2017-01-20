@@ -3,7 +3,8 @@
 
 {% set ssh = {
   'Arch': 'openssh',
-  'Gentoo': 'net-misc/openssh',
+  'Debian': 'ssh',
+  'Gentoo': 'net-misc/openssh'
 }.get(grains.os_family) %}
 
 openssh:

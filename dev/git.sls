@@ -2,6 +2,7 @@
 
 {% set git = {
   'Arch': 'git',
+  'Debian': 'git',
   'Gentoo': 'dev-vcs/git',
 }.get(grains.os_family) %}
 
@@ -14,15 +15,15 @@ git_conf_username:
     - name: user.name
     - value: Anton Paquin
     - global: True
-    - user: anton
+    - user: {{ pillar.get('primary_user') }}
     - require:
-      - user: anton
+      - user: {{ pillar.get('primary_user') }}
 
 git_conf_email:
   git.config_set:
     - name: user.email
     - value: antonpaquin@gmail.com
     - global: True
-    - user: anton
+    - user: {{ pillar.get('primary_user') }}
     - require:
-      - user: anton
+      - user: {{ pillar.get('primary_user') }}

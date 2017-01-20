@@ -2,6 +2,7 @@
 
 {% set deluge = {
   'Arch': 'deluge',
+  'Debian': 'deluge',
   'Gentoo': 'net-p2p/deluge',
 }.get(grains.os_family) %}
 
@@ -16,7 +17,7 @@ deluge:
 #       - pkg: deluge
 #     - onfail:
 #       - cmd: deluge_restart
-# 
+#
 # deluge_restart:
 #   cmd.run:
 #     - name: systemctl restart deluged

@@ -3,11 +3,13 @@
 
 {% set python = {
   'Arch': 'python',
+  'Debian': 'python',
   'Gentoo': 'dev-lang/python',
 }.get(grains.os_family) %}
 
 {% set pip = {
   'Arch': 'python-pip',
+  'Debian': 'python-pip',
   'Gentoo': 'dev-python/pip',
 }.get(grains.os_family) %}
 

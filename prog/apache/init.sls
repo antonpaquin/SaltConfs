@@ -8,6 +8,7 @@
 
 {% set apache = {
   'Arch': 'apache2',
+  'Debian': 'apache2',
   'Gentoo': 'www-servers/apache',
 }.get(grains.os_family) %}
 
@@ -22,7 +23,7 @@ apache2:
 # Place the config file
 /etc/apache2/apache2.conf:
   file.managed:
-    - source: salt://apache/vega.conf
+    - source: salt://prog/apache/vega.conf
     - user: root
     - group: root
     - mode: 644

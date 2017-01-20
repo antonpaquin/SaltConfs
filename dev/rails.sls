@@ -3,16 +3,19 @@
 
 {% set ruby = {
   'Arch': 'ruby',
-  'Gentoo': 'dev-lang/ruby',
+  'Debian': 'ruby',
+  'Gentoo': 'dev-lang/ruby'
 }.get(grains.os_family) %}
 
 {% set rails = {
   'Arch': 'rails',
+  'Debian': 'rails',
   'Gentoo': 'dev-ruby/rails',
 }.get(grains.os_family) %}
 
 {% set passenger = {
   'Arch': 'ruby-passenger',
+  'Debian': 'passenger',
   'Gentoo': 'www-apache/passenger',
 }.get(grains.os_family) %}
 
