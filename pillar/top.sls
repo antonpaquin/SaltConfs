@@ -1,7 +1,11 @@
 base:
-  'Vega':
-    - vega
+  'Argo':
+    - argo
+  'BlueRidge':
+    - blueridge
   'Nimitz':
     - nimitz
+  'Vega':
+    - vega
   '*':
     - global

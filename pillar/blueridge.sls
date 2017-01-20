@@ -4,4 +4,4 @@
 machine: BlueRidge
 
 primary_user: pi
-data_dir: /home/pi/drive
+data_dir: /home/pi
