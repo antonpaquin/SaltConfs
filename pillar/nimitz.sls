@@ -1,12 +1,12 @@
-#
+# Nimitz is the flagship of the fleet -- my personal desktop.
 
-{% set primary_user = 'anton' %}
+machine: Nimitz
 
 # Extensibility! Though vega doesn't use this architecture yet
-primary_user: {{ primary_user }}
+primary_user: anton
 
 # Nimitz data-storage structure
-data_dir: {{ '/home/' + primary_user }}
+data_dir: /home/anton
 top_level_dirs:
   - .config
   - Documents

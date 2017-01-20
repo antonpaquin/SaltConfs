@@ -1,8 +1,10 @@
-# Vega stores things in these data dirs. Might be improved by making a "storage"
-# var and then sticking these all as subdirs of that
+# Vega is the primary machine for storage, backup, media, and related
+# activities. It is the container ship of the fleet. Things that need lots of
+# HDD space go to vega.
+
+machine: Vega
 
 primary_user: pi
-data_dir: /home/{{ primary_user }}/drive
 
 data_dir: /home/pi/drive
 plex_media_dir: /home/pi/drive/Media
