@@ -17,27 +17,20 @@ sshfs:
 
 {% for machine in machines %}
 {{ pillar.get('data_dir') + '/Fleet/' + machine }}:
-  file.directory:
-    - user: {{ pillar.get('primary_user') }}
-    - group: {{ pillar.get('primary_user') }}
-    - dir_mode: 770
-    - makedirs: True
-    - require:
-      - test: built_home
-
   mount.mounted:
     - device: {{ machine }}:/home/pi
     - opts:
       - rw
       - reconnect
       - follow_symlinks
-    - makemnt: true
-    - fstype: fuse
+    - mkmnt: true
+    - fstype: fuse.sshfs
     - require:
       - pkg: sshfs
-      - file: {{ pillar.get('data_dir') + '/Fleet/' + machine }}
+      - file: /root/.ssh/hosts.d/{{ machine }}
+      - sls: ssh.master
 
-{{ pillar.get('data_dir') + '/.ssh/hosts.d/' + machine }}:
+{{ pillar.get('data_dir') }}/.ssh/hosts.d/{{ machine }}:
   file.managed:
     - source: salt://nimitz/fleet/{{ machine }}
     - user: {{ pillar.get('primary_user') }}
@@ -45,4 +38,13 @@ sshfs:
     - mode: 755
     - require:
       - file: {{pillar.get('data_dir') + '/.ssh/hosts.d' }}
+
+/root/.ssh/hosts.d/{{ machine }}:
+  file.managed:
+    - source: salt://nimitz/fleet/{{ machine }}
+    - user: root
+    - group: root
+    - mode: 755
+    - require:
+      - file: /root/.ssh/hosts.d
 {% endfor %}

@@ -9,9 +9,6 @@
     - group: {{ pillar.get('primary_user') }}
     - dir_mode: 770
     - makedirs: True
-    - recurse:
-      - user
-      - group
     - require:
       - user: {{ pillar.get('primary_user') }}
 
