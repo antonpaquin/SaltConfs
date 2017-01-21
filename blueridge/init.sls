@@ -3,6 +3,9 @@ include:
   # The standard pi user
   - user.pi
 
+  # SSH keys
+  - ssh.slave
+
   # Apache for "load balancing"
   - prog.apache
 
