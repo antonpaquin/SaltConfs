@@ -15,7 +15,7 @@
 
 {% set passenger = {
   'Arch': 'ruby-passenger',
-  'Debian': 'passenger',
+  'Debian': 'ruby-passenger',
   'Gentoo': 'www-apache/passenger',
 }.get(grains.os_family) %}
 
