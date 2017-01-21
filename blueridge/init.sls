@@ -16,4 +16,4 @@ include:
   - dev.git
 
   # Something nice for login message
-  - blueridge.motd
+  - utils.motd
