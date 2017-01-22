@@ -28,11 +28,12 @@ include:
   - prog.dolphin_emu
 
   # Usability
+  - utils.acpi
   - utils.alsa
   - utils.bash
-  - utils.netctl
-  - utils.acpi
   - utils.compression
   - utils.dialog
   - utils.fonts
+  - utils.netctl
+  - utils.nslookup
   - ssh.master
