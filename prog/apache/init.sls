@@ -11,6 +11,9 @@
   'Vega': 'vega.conf'
 }.get(pillar.get('machine')) %}
 
+
+#TODO: there's a way to make this auto-restart apache when the conf changes,
+# but I'm not sure exactly how
 apache2:
   pkg.installed:
     - name: {{ apache }}
