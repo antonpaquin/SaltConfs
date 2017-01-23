@@ -8,7 +8,7 @@
 ] %}
 
 {% for machine in machines %}
-salt '{{machine}}' state.apply {{ machine.lower() }}:
+salt '{{machine}}' state.apply {{ machine.lower() }} --force-color --out-file=/home/pi/{{ machine }}.log:
   cron.present:
     - minute: '*/15'
 {% endfor %}
