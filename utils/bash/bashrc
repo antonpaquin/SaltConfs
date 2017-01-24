@@ -5,9 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
-
 PATH=$PATH:/home/anton/.bin:/home/anton/Scripts
 for f in /home/anton/.bashrc.d/*.rc; do
   source $f
