@@ -11,7 +11,9 @@
   'x11-misc/rofi-1.3.0',
   'x11-themes/arc-theme-20161119',
   'dev-util/clion-2016.2.1',
-  'dev-util/pycharm-community-2016.3.2'
+  'dev-util/pycharm-community-2016.3.2',
+  'cross-avr/binutils-2.27',
+  'sys-libs/binutils-libs-2.27'
 ] %}
 
 {% for package in use_testing %}

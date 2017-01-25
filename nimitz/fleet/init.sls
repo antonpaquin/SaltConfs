@@ -22,7 +22,6 @@ sshfs:
     - opts:
       - rw
       - reconnect
-      - follow_symlinks
     - mkmnt: true
     - fstype: fuse.sshfs
     - require:

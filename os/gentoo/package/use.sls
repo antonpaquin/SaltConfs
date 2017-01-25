@@ -25,9 +25,18 @@
   'x11-libs/libxcb': 'xkb'
   } %}
 
+/etc/portage/package.use:
+  file.directory:
+    - user: root
+    - group: root
+    - dir_mode: 755
+
+
 {% for package, flags in use.iteritems() %}
 package.use/{{ package }}:
   file.append:
-    - name: /etc/portage/package.use
+    - name: /etc/portage/package.use/main.conf
     - text: {{package}} {{flags}}
+    - require:
+      - file: /etc/portage/package.use
 {% endfor %}
