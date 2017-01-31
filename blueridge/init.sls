@@ -17,3 +17,6 @@ include:
 
   # Something nice for login message
   - utils.motd
+
+  # For now, blueridge should be able to flash arduino
+  - dev.embedded.avrdude
