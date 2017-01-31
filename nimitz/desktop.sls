@@ -10,8 +10,10 @@ include:
   - ui.lightdm
 
   # Usability
-  - ui.sxhkd
   - ui.lemonbar
+  - ui.screenfetch
+  - ui.scrot
+  - ui.sxhkd
   - ui.urxvt
   - ui.rofi
 

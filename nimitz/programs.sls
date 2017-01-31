@@ -19,6 +19,9 @@ include:
   - dev.git
   - dev.nmap
   - dev.python
+  - dev.python.scipy
+  - dev.python.pip.pandas
+  - dev.python.pip.seaborn
   - dev.qemu
   - prog.kicad
 
@@ -37,4 +40,5 @@ include:
   - utils.fonts
   - utils.netctl
   - utils.nslookup
+  - utils.usbutils
   - ssh.master
