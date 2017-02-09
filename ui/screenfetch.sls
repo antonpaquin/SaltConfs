@@ -1,6 +1,6 @@
 {% set screenfetch = {
   'Gentoo': 'app-misc/screenfetch'
-}.get(grains.os_family) }
+}.get(grains.os_family) %}
 
 screenfetch:
   pkg.installed:
