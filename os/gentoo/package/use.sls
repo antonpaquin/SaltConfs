@@ -6,6 +6,8 @@
   'dev-libs/libgit2': 'ssh',
   'dev-libs/openssl': '-bindist',
 
+  'dev-python/numpy' : 'lapack',
+
   'media-video/ffmpeg': 'vpx opus vorbis',
 
   'media-libs/libvpx': 'svc',
