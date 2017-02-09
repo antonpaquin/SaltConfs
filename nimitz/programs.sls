@@ -1,6 +1,7 @@
 include:
   # Text / office
   - prog.atom
+  - prog.gummi
   - prog.libreoffice
   - prog.mupdf
 
