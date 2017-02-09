@@ -8,6 +8,7 @@ include:
 
   # Apache for "load balancing"
   - prog.apache
+  - prog.apache.apache-utils
 
   # Salt everything, in the crontab
   - blueridge.synchronize
