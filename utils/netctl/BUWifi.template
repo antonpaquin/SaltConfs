@@ -8,6 +8,6 @@ WPAConfigSection=(
   'proto=RSN'
   'key_mgmt=WPA-EAP'
   'eap=PEAP'
-  'identity="paquin"'
-  'password="Moki1330Nadia"'
+  'identity="###IDENTITY###"'
+  'password="###PASSWORD###"'
 )

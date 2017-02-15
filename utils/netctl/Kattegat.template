@@ -4,4 +4,4 @@ Connection=wireless
 Security=wpa
 ESSID=Kattegat
 IP=dhcp
-Key=AntonWasHere
+Key=###PASSWORD###

@@ -1,6 +1,0 @@
-Interface=wlp2s0
-Connection=wireless
-Security=wpa
-ESSID=PS50-a
-IP=dhcp
-Key=\"42b34c85202a7d1514a2210d4194c6240d6e3c99bb493fb7d2d00c71c73d414a
