@@ -39,10 +39,10 @@ super + space
 
 #Volume
 XF86AudioLowerVolume
-  VolumeDown
+  /home/anton/Scripts/VolumeDown
 
 XF86AudioRaiseVolume
-  VolumeUp
+  /home/anton/Scripts/VolumeUp
 
 XF86AudioMute
   amixer -D pulse set Master 1+ toggle
