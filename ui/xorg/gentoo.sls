@@ -8,3 +8,7 @@ x11-base/xorg-server:
       - test: built_xorg
     - require:
       - test: make.conf
+
+xinput:
+  pkg.installed:
+    - name: x11-apps/xinput
