@@ -13,9 +13,6 @@
   'Gentoo': 'dev-python/pip',
 }.get(grains.os_family) %}
 
-include:
-  - dev.python.pip.piplibs
-
 python:
   pkg.installed:
     - name: {{ python }}
