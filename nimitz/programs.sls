@@ -14,14 +14,18 @@ include:
   - prog.deluge
   - prog.hexchat
 
+  - prog.aria2
+  - prog.filezilla
+
   # Dev
   - dev.arduino
   - dev.docker
   - dev.git
   - dev.nmap
   - dev.python
+  - dev.python.piplibs
   - dev.python.scipy
-  - dev.python.pip.piplibs
+  - dev.python.jupyter
   - dev.qemu
   - prog.kicad
 
