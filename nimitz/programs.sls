@@ -14,7 +14,6 @@ include:
   - prog.deluge
   - prog.hexchat
 
-  - prog.aria2
   - prog.filezilla
 
   # Dev
