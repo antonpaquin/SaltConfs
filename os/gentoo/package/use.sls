@@ -1,6 +1,8 @@
 {% set use = {
   'app-crypt/pinentry': 'gnome-keyring',
 
+  'app-text/poppler': 'cairo',
+
   'dev-db/postgresql': 'kerberos',
 
   'dev-libs/libgit2': 'ssh',
