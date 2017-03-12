@@ -22,10 +22,11 @@ include:
   - dev.git
   - dev.nmap
   - dev.python
-  - dev.python.piplibs
+  - dev.python.pip.piplibs
   - dev.python.scipy
   - dev.python.jupyter
   - dev.qemu
+  - dev.verilog
   - prog.kicad
 
   - dev.jetbrains.pycharm
