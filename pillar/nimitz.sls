@@ -9,6 +9,7 @@ primary_user: anton
 data_dir: /home/anton
 top_level_dirs:
   - .config
+  - .passwords
   - Documents
   - Downloads
   - Fleet
