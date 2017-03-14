@@ -22,6 +22,7 @@ openssh:
     - user: pi
     - group: pi
     - mode: 644
+    - makedirs: True
     - require:
       - pkg: ssh
       - user: pi
