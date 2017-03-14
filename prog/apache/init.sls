@@ -8,6 +8,7 @@
 
 {% set conf = {
   'BlueRidge': 'blueridge.conf',
+  'Thialf': 'thialf.conf',
   'Vega': 'vega.conf'
 }.get(pillar.get('machine')) %}
 

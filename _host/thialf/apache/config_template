@@ -1,0 +1,6 @@
+<VirtualHost *:80>
+	ServerName {{ serviceName }}.hack.antonpaqu.in
+  ServerAlias {{ serviceName }}.hack.antonpaquin.me
+	ProxyPass "/" "http://127.0.0.1:{{ port }}"
+	ProxyPassReverse "/" "http://127.0.0.1:{{ port }}"
+</VirtualHost>

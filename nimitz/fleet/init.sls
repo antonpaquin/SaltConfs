@@ -2,7 +2,7 @@
 include:
   - ssh.master
 
-{% set machines = ['argo', 'vega', 'blueridge'] %}
+{% set machines = ['argo', 'vega', 'blueridge', 'thialf'] %}
 
 {% set sshfs = {
   'Arch': 'sshfs',

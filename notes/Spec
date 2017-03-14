@@ -20,3 +20,38 @@ Blueridge
   x git
   x crontab
   x motd
+
+Thialf
+  Built to make hackathons easy.
+
+  - Hypriot comes with docker
+
+  # Actually, don't install anything by default. Host packages on a local repo,
+  # and set the sources list to look at that repo first.
+  # Also auto-sync that repo
+  - Dockerfile should include:
+    - Frameworks:
+      - Sparkjava
+      - Flask
+      - Ruby on Rails (ruby passenger)
+      - Nodejs ( frameworks? angular? )
+      - Django
+      - Laravel
+    - Tools:
+      - Git ( github script? ) ( does Codiac have that? )
+      - Codiac
+      - Taiga
+      - Cozycloud?
+      - Some kind of chatroom? ( Does Taiga have that? )
+    - Other:
+      - Bootstrap ( + that theme )
+      - Postgres
+      - Wordpress?
+      - ElasticSearch?
+
+
+  - Apache
+  - custon ssh login script? paramiko.Transport?
+  - Semantic controls?
+  - Android sdk?
+  - AVR to hex compiler?

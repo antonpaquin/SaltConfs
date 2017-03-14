@@ -5,6 +5,8 @@ base:
     - blueridge
   'Nimitz':
     - nimitz
+  'Thialf':
+    - thialf
   'Vega':
     - vega
   '*':

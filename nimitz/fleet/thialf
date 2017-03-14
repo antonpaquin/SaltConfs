@@ -1,0 +1,5 @@
+Host thialf
+  HostName thialf.antonpaqu.in
+  User pi
+  Port 3022
+  IdentityFile ~/.ssh/nimitz.key
