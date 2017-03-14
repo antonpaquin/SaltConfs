@@ -5,5 +5,6 @@ pi:
   user.present:
     - optional_groups: docker
     - password: $1$xyz$.APXLzfnDfeg/Qdr4HFdp0
+    - shell: /bin/bash
 
 # TODO put this guy in sudoers
