@@ -1,0 +1,5 @@
+Host argo
+  HostName argo.antonpaquin.me
+  User pirate
+  Port 1022
+  IdentityFile ~/.ssh/nimitz.key
