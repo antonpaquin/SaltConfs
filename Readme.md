@@ -11,4 +11,4 @@ Ideally, any of my machines should be able to be cloned with a few commands.
 1. Setup a salt master
 2. Setup the target machine as a salt minion
 3. Deploy these files to /srv/salt (pillar goes to /srv/pillar)
-4. sudo salt 'Targetmachine' state.apply targetstate
+4. sudo salt 'Targetmachine' state.apply \_host.targetstate

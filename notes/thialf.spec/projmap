@@ -1,0 +1,11 @@
+This file should:
+  - Tell which docker container to enter
+  - maintain a list of logins to that container?
+  -
+
+On project creation:
+  - Create the apache virtualhost & restart apache
+  - Create a docker container, map some port to that container
+  - Run any specified installs on that server
+
+On user creation in a container:
