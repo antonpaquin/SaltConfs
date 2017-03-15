@@ -9,7 +9,7 @@
 
 {% set pip = {
   'Arch': 'python-pip',
-  'Debian': 'python-pip',
+  'Debian': 'python3-pip',
   'Gentoo': 'dev-python/pip',
 }.get(grains.os_family) %}
 
