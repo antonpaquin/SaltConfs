@@ -1,20 +1,25 @@
 include:
 
-  # The standard pi user
+# Standard anton-pi stuff
+
+# The standard pi user
   - user.pi
-
-  # SSH keys
+# SSH keys
   - ssh.slave
+# Something nice for login message
+  - utils.motd
 
-  # Apache, distribute connections on this end as opposed to BR
+# Built to be used by others
+
+# Apache, distribute connections on this end as opposed to BR
   - prog.apache
   - prog.apache.apache-utils
-
-  # Some thialf-specific apache conf
   - _host.thialf.apache
-
-  # Git is necessary
+# Git is necessary
   - dev.git
-
-  # Something nice for login message
-  - utils.motd
+# User target for ssh
+  - _host.thialf.login
+# Locally host important packages
+  - _host.thialf.repository
+# Docker container is the target machine
+  - _host.thialf.docker
