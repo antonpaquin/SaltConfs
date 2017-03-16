@@ -1,36 +1,37 @@
 import json
 import sys
 
-directory_file = '/root/directory.json'
+directory_file = '/home/hacker/directory.json'
 first_port = 4000
 
 try:
     with open(directory_file, 'r') as directory_f:
         directory = json.loads(directory_f.read())
-except FileNotFoundError as e:
+except Exception as e:
     directory = {}
 
 
 def main():
     args = sys.argv
     flag = args[1]
+    target = args[2].strip()
 
     if flag == 'exists':
-        if projectExists(args[2]):
+        if projectExists(target):
             print('0')
         else:
             print('1')
     elif flag == 'port':
-        if projectExists(args[2]):
-            print(getPort(args[2]))
+        if projectExists(target):
+            print(getPort(target))
         else:
             print('-1')
     elif flag == 'new':
-        if projectExists(args[2]):
-            print(getPort(args[2]))
+        if projectExists(target):
+            print(getPort(target))
             return
-        newProject(args[2])
-        print(getPort(args[2]))
+        newProject(target)
+        print(getPort(target))
 
 
 def projectExists(project):
