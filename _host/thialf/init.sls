@@ -17,6 +17,8 @@ include:
   - _host.thialf.apache
 # Git is necessary
   - dev.git
+# Partially depends on python
+  - dev.python
 # User target for ssh
   - _host.thialf.login
 # Locally host important packages

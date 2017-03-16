@@ -1,1 +1,4 @@
-deb http://thialf.antonpaqu.in/deb deb
+deb http://mirrordirector.raspbian.org/raspbian/ jessie main contrib non-free rpi
+deb http://mirrordirector.raspbian.org/raspbian/ stretch main contrib non-free rpi
+# This is temporary, eventually I'll add local sources here
+#deb http://thialf.antonpaqu.in/deb/ deb

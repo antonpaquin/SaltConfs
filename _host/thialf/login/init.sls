@@ -1,8 +1,29 @@
 include:
   - _host.thialf.login.hacker
+  - dev.python
 
-/root/directory.json:
+/home/hacker/directory.py:
   file.managed:
+    - source: salt://_host/thialf/login/directory.py
     - user: root
     - group: root
-    - mode: 644
+    - mode: 755
+    - makedirs: True
+    - require:
+      - pkg: python
+
+/home/hacker/console.sh:
+  file.managed:
+    - source: salt://_host/thialf/login/console.sh
+    - user: root
+    - group: root
+    - mode: 744
+    - makedirs: True
+
+/home/hacker/login.sh:
+  file.managed:
+    - source: salt://_host/thialf/login/login.sh
+    - user: root
+    - group: root
+    - mode: 4755
+    - makedirs: True
