@@ -1,13 +1,13 @@
 #! /bin/bash
 
-echo -n "project name: " &&
+echo -n "Project name: " &&
 while true; do
   read projname &&
   if [[ `python /home/hacker/directory.py exists $projname` -eq "0" ]]; then
-    echo "project exists!"
+    sudo /home/hacker/login.sh $projname
     exit 0
   else
-    echo "no project with that name"
-    echo -n "try again: "
+    echo "No project with that name. Try again?"
+    echo -n "Project name: "
   fi
 done

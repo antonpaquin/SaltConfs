@@ -7,5 +7,15 @@ COPY apt-sources /etc/apt/sources.list
 # apt-get update
 RUN apt-get update
 
+# Raspbian default is too minimalist for comfort.
+# Contrary to the typical docker methods, we're installing recommends / suggests
+# here as this is a dev box that people will be using the shell in
+RUN apt-get install -y --install-recommends \
+  aptitude \
+  python3 \
+  git \
+  apache2
+RUN aptitude install -y ~prequired ~pimportant ~pstandard
+
 # stay running forever
 ENTRYPOINT tail -f /dev/null

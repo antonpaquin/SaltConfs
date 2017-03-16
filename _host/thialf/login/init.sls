@@ -25,5 +25,12 @@ include:
     - source: salt://_host/thialf/login/login.sh
     - user: root
     - group: root
-    - mode: 4755
+    - mode: 755
     - makedirs: True
+
+/etc/sudoers:
+  file.append:
+    - text: hacker ALL=(ALL) NOPASSWD:/home/hacker/login.sh
+
+jinja2:
+  pip.installed: []
