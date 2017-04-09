@@ -1,5 +1,0 @@
-Host vega
-  HostName vega.antonpaquin.me
-  User pi
-  Port 22
-  IdentityFile ~/.ssh/nimitz.key

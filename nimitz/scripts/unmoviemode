@@ -1,7 +1,0 @@
-#!/bin/bash
-
-sudo systemctl start lemonbar
-bspc monitor -g 1920x1040+0+40
-bspc config border_width 5
-bspc config window_gap 10
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10

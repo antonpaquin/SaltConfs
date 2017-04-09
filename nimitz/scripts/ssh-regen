@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo -e "/home/anton/.ssh/nimitz\n\n" | ssh-keygen
-mv ~/.ssh/nimitz ~/.ssh/nimitz.key
-cp ~/.ssh/nimitz.pub ~/Programming/SaltConfs/ssh/authorized_keys
-sudo cp /home/anton/.ssh/nimitz.key /root/.ssh/nimitz.key
