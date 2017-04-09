@@ -34,6 +34,7 @@ include:
 
   # Games
   - prog.dolphin_emu
+  # - prog.wine
 
   # Usability
   - utils.acpi
