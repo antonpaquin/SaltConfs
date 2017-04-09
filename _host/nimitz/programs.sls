@@ -33,7 +33,8 @@ include:
   - dev.jetbrains.clion
 
   # Games
-  - prog.dolphin_emu
+  - game.dolphin_emu
+  - game.stepmania
   # - prog.wine
 
   # Usability
