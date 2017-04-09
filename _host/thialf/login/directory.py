@@ -54,4 +54,5 @@ def _firstOpenPort():
     ports = list(map(lambda x: x[1]['port'], directory.items()))
     return max(ports + [first_port]) + 1
 
-main()
+if __name__ == '__main__':
+    main()

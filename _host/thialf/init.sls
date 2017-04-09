@@ -25,3 +25,5 @@ include:
   - _host.thialf.repository
 # Docker container is the target machine
   - _host.thialf.docker
+# Webui, make it usable
+  - _host.thialf.webui

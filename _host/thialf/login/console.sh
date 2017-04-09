@@ -9,6 +9,8 @@ if [[ "$1" == "new" ]]; then
     # Create a new project / docker thing
     newPort=`python directory.py new $2`
     docker run -d -p $newPort:80 --name $2 --hostname $2 basic
+    python /home/hacker/apache/apacheconf.py new $2 $newPort
+    systemctl restart apache2
     exit 0
   fi
 fi
