@@ -5,7 +5,7 @@
   'x11-misc/sxhkd-0.5.7',
   'app-eselect/eselect-electron-1.0.0',
   'app-editors/atom-1.12.2',
-  'dev-util/electron-1.3.6',
+  'dev-util/electron-1.3.13-r1',
   'x11-wm/bspwm-0.9.2',
   'x11-libs/xcb-util-xrm-1.2',
   'x11-misc/rofi-1.3.0',
@@ -30,7 +30,8 @@
   'dev-python/notebook-4.3.0',
   'dev-python/jupyter_core-4.2.1',
   'dev-python/jupyter_client-4.4.0',
-  'dev-python/ipython-5.1.0'
+  'dev-python/ipython-5.1.0',
+  'games-arcade/stepmania-5.9999'
 ] %}
 
 {% for package in use_testing %}
