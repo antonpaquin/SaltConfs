@@ -2,6 +2,7 @@
   'app-crypt/pinentry': 'gnome-keyring',
 
   'app-text/poppler': 'cairo',
+  'app-text/xmlto': 'text',
 
   'dev-db/postgresql': 'kerberos',
 
@@ -12,7 +13,7 @@
 
   'media-video/ffmpeg': 'vpx opus vorbis',
 
-  'media-libs/libvpx': 'svc',
+  'media-libs/libvpx': 'svc postproc',
   'media-libs/mesa': 'gles2',
 
   'net-misc/iputils': '-caps -filecaps',
