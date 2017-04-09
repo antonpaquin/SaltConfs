@@ -31,7 +31,6 @@
   'dev-python/jupyter_core-4.2.1',
   'dev-python/jupyter_client-4.4.0',
   'dev-python/ipython-5.1.0',
-  'games-arcade/stepmania-5.9999'
 ] %}
 
 {% for package in use_testing %}

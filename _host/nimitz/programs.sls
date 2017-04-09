@@ -34,7 +34,6 @@ include:
 
   # Games
   - game.dolphin_emu
-  - game.stepmania
   # - prog.wine
 
   # Usability
