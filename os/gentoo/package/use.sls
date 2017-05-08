@@ -11,10 +11,11 @@
 
   'dev-python/numpy' : 'lapack',
 
-  'media-video/ffmpeg': 'vpx opus vorbis',
-
   'media-libs/libvpx': 'svc postproc',
   'media-libs/mesa': 'gles2',
+
+  'media-video/ffmpeg': 'vpx opus vorbis',
+  'media-video/mpv': 'lua',
 
   'net-misc/iputils': '-caps -filecaps',
   'net-misc/openssh': '-bindist',
@@ -27,7 +28,8 @@
   'sys-libs/zlib': 'minizip',
 
   'x11-libs/cairo': 'xcb',
-  'x11-libs/libxcb': 'xkb'
+  'x11-libs/libxcb': 'xkb',
+  'x11-misc/tint2': 'tint2conf'
   } %}
 
 /etc/portage/package.use:

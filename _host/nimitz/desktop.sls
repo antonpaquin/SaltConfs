@@ -10,12 +10,13 @@ include:
   - ui.lightdm
 
   # Usability
-  - ui.lemonbar
+  - ui.networkmanager
+  - ui.rofi
   - ui.screenfetch
   - ui.scrot
   - ui.sxhkd
+  - ui.tint2
   - ui.urxvt
-  - ui.rofi
 
   # Pretty
   - ui.feh
