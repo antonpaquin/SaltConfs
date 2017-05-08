@@ -14,7 +14,7 @@
   'dev-libs/mathjax',
 
   'dev-python/backports-shutil_get_terminal_size',
-  'dev-python/entrypoints'
+  'dev-python/entrypoints',
   'dev-python/ipykernel',
   'dev-python/ipyparallel',
   'dev-python/ipython',
