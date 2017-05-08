@@ -25,6 +25,10 @@ super + {h,j,k,l}
 super + {Left,Down,Up,Right}
   bspc node -s {west,south,north,east}
 
+#Presel split direction
+super + shift + {h,j,k,l}
+  bspc node -p {west,south,north,east}
+
 #Focus on click
 ~button1
   bspc node pointed -f
