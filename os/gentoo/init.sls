@@ -4,5 +4,6 @@ include:
   - os.gentoo.make
   - os.gentoo.package.keywords
   - os.gentoo.package.use
-  
+
   - os.gentoo.layman
+  - os.gentoo.package.use-wine

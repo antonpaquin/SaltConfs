@@ -34,7 +34,7 @@ include:
 
   # Games
   - game.dolphin_emu
-  # - prog.wine
+  - prog.wine
 
   # Usability
   - utils.acpi
@@ -43,7 +43,9 @@ include:
   - utils.compression
   - utils.dialog
   - utils.fonts
+  - utils.netcat
   - utils.netctl
   - utils.nslookup
+  - utils.ntp
   - utils.usbutils
   - ssh.master
